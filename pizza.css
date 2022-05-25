@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  position: relative;
+}
+.main .cont-1 {
+  flex-basis: 45%;
+  flex-grow: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(gambar/pexels-daria-shevtsova-1260968.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: #fff;
+}
+.main .cont-2 {
+  flex-basis: 55%;
+  flex-grow: 1;
+  /* background: linear-gradient(rgba(255, 147, 32, 0.1), rgba(255, 147, 32, 0.3)), url(gambar/Untitled-1.png); */
+  /* background-size: 140vh 140vh;
+  background-position: center;
+  background-repeat: no-repeat; */
+  padding: 40px;
+  position: relative;
+}
+.main .cont-2 .top2 ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  border-radius: 6px;
+}
+.main .cont-2 .top2 a {
+  text-decoration: none;
+  color: rgb(18, 18, 18);
+  font-size: 18px;
+  transition: 0.1s;
+  font-weight: 400;
+}
+.main .cont-2 .top2 a:hover {
+  color: rgb(253, 127, 23);
+}
+.main .cont-2 .top2 .btn {
+  border: 3px solid rgb(253, 127, 23);
+  padding: 8px 50px;
+  position: relative;
+  transition: 0.3s;
+  margin: auto;
+  z-index: 3;
+}
+.cont-2 .top2 img {
+  position: absolute;
+  width: 35px;
+  top: 1%;
+  left: 32%;
+}
+.main .cont-2 .top2 .btn:hover {
+  background: rgb(253, 127, 23);
+  color: #fff;
+}
+.right-text {
+  width: 80%;
+  margin: 180px auto 0;
+  padding: 10px;
+  text-align: end;
+}
+.right-text h2 {
+  color: rgb(28, 28, 28);
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: right;
+}
+.right-text h3 {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: right;
+}
+.right-text p {
+  color: #555;
+  text-align: right;
+  font-size: 17px;
+  line-height: 25px;
+}
+.right-text a {
+  margin-top: 25px;
+  font-size: 1.1em;
+  font-family: "Special Elite", cursive;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 13px 50px;
+  background: rgb(253, 127, 23);
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(253, 127, 23, 0.7);
+  transition: 0.3s;
+}
+.right-text a:hover {
+  transform: translateX(-20px);
+}
+.main .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .top .logo {
+  font-size: 2.5em;
+  cursor: pointer;
+  font-family: "Special Elite", cursive;
+  transition: 0.3s;
+}
+.main .top .logo:hover {
+  transform: scale(1.2);
+}
+.main .top .search {
+  width: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.main .top .search:hover {
+  transform: scale(1.4);
+}
+.left-text {
+  width: 80%;
+  margin: 160px auto 0;
+}
+.left-text h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.left-text h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 5px 0 10px;
+  font-style: italic;
+}
+.left-text p {
+  line-height: 25px;
+  font-size: 17px;
+  text-align: justify;
+}
+.left-text a.bawah {
+  margin-top: 25px;
+  font-size: 1.1em;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Special Elite", cursive;
+  padding: 13px 50px;
+  background: rgb(253, 127, 23);
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(253, 127, 23, 0.7);
+  transition: 0.3s;
+}
+.left-text a.bawah:hover {
+  transform: translateX(20px);
+}
+.left-text .menu {
+  position: absolute;
+  z-index: 10;
+  font-family: "Special Elite", cursive;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  /* background: rgba(0, 0, 0, 0.5); */
+  top: -60%;
+  left: 9%;
+  transition: 0.3s;
+}
+.left-text .menu .image {
+  width: 280px;
+  height: 300px;
+  margin: 20px 5px 20px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.left-text .menu .image:hover {
+  transform: translateY(-5px);
+}
+.left-text #pizza a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 300px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+.left-text .one {
+  background: url(gambar/pexels-brett-jordan-825661.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.left-text .two {
+  background: url(gambar/pexels-daria-shevtsova-1260968.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.left-text .three {
+  background: url(gambar/pexels-pixabay-315755.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.left-text .four {
+  background: url(gambar/pexels-vinicius-benedit-1082343.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.left-text .ket {
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  transition: 0.3s;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  border-radius: 6px;
+}
+.left-text .ket:hover {
+  opacity: 0%;
+}
+.left-text a.dalam {
+  margin-top: 25px;
+  font-size: 1.1em;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Special Elite", cursive;
+  background: rgb(253, 127, 23);
+  border-radius: 6px;
+  /* box-shadow: 0 5px 10px rgba(253, 127, 23, 0.7); */
+  transition: 0.1s;
+}
+.left-text a.dalam:hover {
+  transform: scale(1.1);
+}
+.left-text .close {
+  width: 120px;
+}
+.left-text .layer {
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.left-text .close p {
+  background-color: rgba(253, 127, 23, 0.7);
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.left-text .close p:hover {
+  background-color: rgb(253, 127, 23);
+  transform: scale(1.1);
+}
+.right-text .about {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 130%;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  top: -77%;
+  left: -60%;
+  transition: 0.3s;
+}
+
+.right-text .about .photo {
+  flex-basis: 45%;
+  flex-grow: 1;
+  background: url(gambar/pexels-cottonbro-3171766.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 6px;
+}
+.right-text .about .info {
+  flex-basis: 55%;
+  flex-grow: 1;
+  padding: 30px 45px 50px;
+}
+.right-text .about .info p {
+  color: #fff;
+}
+.right-text .about .info h2 {
+  color: #fff;
+}
+.right-text .about p.z {
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+  display: inline-block;
+  font-family: "Special Elite", cursive;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px 40px;
+  font-size: 1.1em;
+  border-radius: 6px;
+  background: rgb(253, 127, 23);
+  transition: 0.3s;
+}
+.right-text .about p.z:hover {
+  background-color: rgb(253, 127, 23);
+  transform: scale(1.1);
+}
